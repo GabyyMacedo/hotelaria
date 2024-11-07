@@ -105,7 +105,7 @@ function CarregarDados() {
 
 // Chama a função verificarPaginaIndex() quando a página é carregada
 
-if (window.location.pathname.endsWith("index.html")) {
+if (window.location.pathname.endsWith("index2.html")) {
     CarregarDados(); // Chama a função CarregarDados() se estiver na página "index.html"
 };
 function Teste() {
@@ -281,7 +281,7 @@ function Login() {
         } else if (objeto.senha === senha) {
             alert(`Entrada com sucesso ${objeto.nome}`);
             SalvarDados()
-            window.location.href = 'index.html';
+            window.location.href = 'index2.html';
         } else {
             alert("Senha incorreta.");
         }
@@ -472,7 +472,7 @@ if (window.location.pathname.endsWith("logout.html")) {
 if (window.location.pathname.endsWith("login.html")) {
     CarregarDados();
 };
-if (window.location.pathname.endsWith("index2.html")) {
+if (window.location.pathname.endsWith("index.html")) {
     CarregarDados();
 };
 if (window.location.pathname.endsWith("cadastro.html")) {
@@ -504,7 +504,7 @@ function Retirada() {
             lista_reservas[tipo].splice(index, 1);
             alert("Retirada Válida, volte sempre.\nO Hotel encantado agradece a sua estadia conosco.")
             SalvarDados();
-            window.location.href = 'index2.html'
+            window.location.href = 'index.html'
 
         }
         }
